@@ -4,7 +4,7 @@ const URL = "http://localhost:80/users";
 export const UsersGetRequest = () => {
   return axios
     .get(URL)
-    .then((response) => response)
+    .then((response) => console.log(response))
     .catch((error) => {
       console.log(error);
     });
